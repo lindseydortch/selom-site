@@ -1,0 +1,86 @@
+.skillset {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  padding: 5rem 0 0 0;
+  color: $brand-white;
+  height: 80rem;
+  
+
+  h2 {
+    align-self: center;
+  }
+
+  .skillset__container {
+    width: 100%;
+    // max-width: 80rem;
+    height: 80rem;
+    overflow: hidden;
+    position: relative;
+
+    // display: flex;
+
+    span svg {
+      display: inline-block;
+      position: absolute;
+      width: 3.5rem;
+      height: 3.5rem;
+      cursor: pointer;
+      top: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+
+    .btn-prev {
+      left: 2rem;
+      transform: rotate(-90deg);
+    }
+
+    .btn-next {
+      right: 2rem;
+      transform: rotate(90deg);
+    }
+  }
+
+  .skills {
+    height: 100%;
+    width: 100%;
+    // display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+
+    .skill-right,
+    .skill-left {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 50%;
+      height: 100%;
+      padding: 15rem;
+
+      p {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-900) {
+          font-size: 3rem;
+        }
+      }
+
+      
+    }
+    
+    .skill-left {
+      left: 0;
+    }
+
+    .skill-right {
+      right: 0;
+    }
+  }
+}

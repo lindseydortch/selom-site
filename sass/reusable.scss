@@ -1,0 +1,129 @@
+.d-none {
+  display: none !important;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.heading-2 {
+  display: inline-block;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+
+  @media only screen and (max-width: $bp-900) {
+    font-size: 3.5rem;
+  }
+}
+
+.btn-outline {
+  padding: 2rem 3rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s;
+
+  @media only screen and (max-width: $bp-900) {
+    font-size: 1.4rem;
+  }
+}
+
+.btn-outline-orange {
+  border: 1.5px solid $brand-tertiary;
+  color: $brand-secondary;
+
+  &:hover {
+    background-color: $brand-tertiary;
+    transform: translateY(-.5rem);
+  }
+}
+
+.btn-outline-green-dark {
+  border: 1.5px solid $brand-secondary;
+  color: $brand-tertiary;
+
+  &:hover {
+    background-color: $brand-secondary;
+    transform: translateY(-.5rem);
+  }
+}
+
+.btn-outline-green-light {
+  border: 1.5px solid $brand-primary;
+  color: $brand-tertiary;
+
+  &:hover {
+    background-color: $brand-primary;
+    transform: translateY(-.5rem);
+  }
+}
+
+.btn-outline-white {
+  border: 1.5px solid $brand-white;
+  color: $brand-secondary;
+
+  &:hover {
+    background-color: $brand-white;
+    transform: translateY(-.5rem);
+  }
+}
+
+.color-brand-primary {
+  color: $brand-primary;
+
+  &--underline {
+    border-bottom: 5px solid $brand-primary;
+  }
+}
+
+.color-brand-secondary {
+  color: $brand-secondary;
+
+  &--underline {
+    border-bottom: 3px solid $brand-secondary;
+  }
+}
+
+.color-brand-tertiary {
+  color: $brand-tertiary;
+
+  &--underline {
+    border-bottom: 3px solid $brand-tertiary;
+  }
+}
+
+.bg-brand-primary {
+  background-color: $brand-primary;
+}
+
+.bg-brand-secondary {
+  background-color: $brand-secondary;
+}
+
+.bg-brand-tertiary {
+  background-color: $brand-tertiary;
+}
+
+.fill-brand-primary {
+  fill: $brand-primary;
+}
+
+.fill-brand-secondary {
+  fill: $brand-secondary;
+}
+
+.fill-brand-tertiary {
+  fill: $brand-tertiary;
+}
+
+.fill-brand-white {
+  fill: $brand-white;
+}

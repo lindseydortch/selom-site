@@ -1,0 +1,46 @@
+.emotional-intelligence {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    align-self: center;
+  }
+
+  .ei {
+
+    &__point {
+      display: flex;
+
+      .point-left,
+      .point-right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+        background-color: $brand-tertiary;
+
+        &.point-left-icon,
+        &.point-right-icon {
+          background-color: $brand-primary;
+        }
+        
+        p {
+          font-size: 2rem;
+          width: 70%;
+          text-align: center;
+          text-transform: uppercase;
+          color: $brand-secondary;
+        }
+
+        svg {
+          width: 20rem;
+          height: 20rem;
+          fill: $brand-tertiary;
+        }
+      }
+    }
+  }
+}

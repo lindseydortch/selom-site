@@ -1,0 +1,42 @@
+.strengths {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 8rem;
+
+  h2 {
+    align-self: center;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    .card {
+      width: 30%;
+      padding: 8rem 3rem;
+      background-color: $brand-secondary;
+      border-radius: .5rem;
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+
+      color: $brand-white;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.6rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-1rem);
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-1100) {
+    padding: 5rem;
+  }
+}

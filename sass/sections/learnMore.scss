@@ -1,0 +1,120 @@
+.learn-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 8rem;
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--1 {
+      @media only screen and (max-width: $bp-900) {
+        margin-top: -5rem;
+      }
+    }
+  }
+
+  h2 {
+
+    @media only screen and (max-width: $bp-900) {
+      margin: 0;
+    }
+  }
+
+  .content {
+
+    p {
+      color: $brand-secondary;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      font-weight: 400;
+
+      span {
+        color: $brand-tertiary;
+      }
+
+      @media only screen and (max-width: $bp-1200) {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  .content--left,
+  .content--right {
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 70rem;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  .points__container {
+
+    .point {
+      position: relative;
+
+      p {
+        font-size: 6rem;
+        text-transform: uppercase;
+        display: inline-block;
+        color: $brand-tertiary;
+        position: relative;
+
+        @media only screen and (max-width: $bp-1200) {
+          font-size: 4rem;
+        }
+      }
+
+      span {
+        position: absolute;
+        font-size: 15rem;
+        line-height: 1;
+        display: inline-block;
+
+        color: $brand-primary;
+        opacity: 0.3;
+
+        @media only screen and (max-width: $bp-1200) {
+          font-size: 10rem;
+        }
+      }
+
+      &--1 {
+        margin-bottom: 8rem;
+        margin-top: 5rem;
+
+        span {
+          left: 0;
+        }
+      }
+
+      &--2 {
+        text-align: right;
+        margin-bottom: 5rem;
+
+        span {
+          right: 0;
+          top: 0;
+        }
+
+        @media only screen and (max-width: $bp-1200) {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-1100) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-900) {
+    padding: 3rem 5rem 1rem 5rem;
+  }
+}

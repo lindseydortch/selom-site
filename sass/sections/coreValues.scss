@@ -1,0 +1,33 @@
+.core-values {
+  background-color: $brand-secondary;
+  padding: 5rem 0;
+
+  .value {
+    text-transform: uppercase;
+    font-size: 8rem;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+
+    &--1,
+    &--2 {
+      margin-bottom: 2rem;
+    }
+
+    &--1 {
+      color: $brand-tertiary;
+    }
+
+    &--2 {
+      color: $brand-white;
+    }
+
+    &--3 {
+      color: $brand-primary;
+    }
+  }
+
+  .value-text {
+    animation: ticker 5s infinite linear;
+  }
+}
