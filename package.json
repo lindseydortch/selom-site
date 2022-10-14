@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass-dev": "sass --watch --update --style=expanded sass/main.scss:styles.css",
-    "sass-prod": "sass --no-source-map --style=compressed styles/main.scss:styles.css",
+    "sass-prod": "sass --no-source-map --style=compressed sass/main.scss:styles.css",
     "prefix": "postcss --use autoprefixer -b 'last 10 versions' styles.css -o style.prefix.css"
   },
   "keywords": [],
