@@ -75,8 +75,8 @@
         left: 45%;
         height: 60vh;
         
-        width: 50%;
-        transform: scale(1.5);
+        width: 60%;
+        // transform: scale(1.5);
 
         @media only screen and (max-width: $bp-1200) {
           bottom: -8rem;
@@ -130,9 +130,11 @@
       
       h2 {
         text-align: left;
+        // position: relative;
 
         & .i-am {
           margin-left: .5rem;
+          margin-right: 1rem;
           font-size: 7rem;
           margin-bottom: 1.5rem;
           color: $brand-secondary;
@@ -143,15 +145,65 @@
         }
 
         .i-leader {
+          // left: 1rem;
           display: inline-block;
+          position: absolute;
 
           .leader-span {
             font-size: 7rem;
             margin-bottom: 1.5rem;
             color: $brand-tertiary;
+            opacity: 0;
+            display: inline-block;
+
+            position: absolute;
 
             @media only screen and (max-width: $bp-900) {
               font-size: 5rem;
+            }
+
+            &--1 {
+              animation: fadeIn;
+              animation-duration: 2s;
+              animation-timing-function: ease-out;
+              animation-iteration-count: 1;
+              animation-fill-mode: forwards;
+            }
+
+            &--2 {
+              animation: fadeIn;
+              animation-delay: 2s;
+              animation-duration: 2s;
+              animation-timing-function: ease-out;
+              animation-iteration-count: 1;
+              animation-fill-mode: forwards;
+            }
+
+            &--3 {
+              animation: fadeIn;
+              animation-delay: 4s;
+              animation-duration: 2s;
+              animation-timing-function: ease-out;
+              animation-iteration-count: 1;
+              animation-fill-mode: forwards;
+            }
+
+            &--4 {
+              animation: fadeIn;
+              animation-delay: 6s;
+              animation-duration: 2s;
+              animation-timing-function: ease-out;
+              animation-iteration-count: 1;
+              animation-fill-mode: forwards;
+            }
+
+            &--5 {
+              animation: fadeInStay;
+              animation-delay: 8s;
+              animation-duration: 2s;
+              animation-timing-function: ease-out;
+              animation-iteration-count: 1;
+              animation-fill-mode: forwards;
             }
           }
         }

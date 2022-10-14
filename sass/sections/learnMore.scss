@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $brand-secondary;
 
   padding: 8rem;
 
@@ -27,7 +28,7 @@
   .content {
 
     p {
-      color: $brand-secondary;
+      color: $brand-white;
       font-size: 3.5rem;
       text-transform: uppercase;
       font-weight: 400;
@@ -77,8 +78,8 @@
         line-height: 1;
         display: inline-block;
 
-        color: $brand-primary;
-        opacity: 0.3;
+        color: $brand-white;
+        opacity: 0.2;
 
         @media only screen and (max-width: $bp-1200) {
           font-size: 10rem;

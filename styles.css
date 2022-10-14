@@ -36,6 +36,34 @@ a {
     transform: translateX(-100%);
   }
 }
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  80% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes fadeInStay {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  80% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 .d-none {
   display: none !important;
 }
@@ -261,8 +289,7 @@ a {
   bottom: 0;
   left: 45%;
   height: 60vh;
-  width: 50%;
-  transform: scale(1.5);
+  width: 60%;
 }
 @media only screen and (max-width: 75em) {
   .hero .hero__content--left .selom {
@@ -313,6 +340,7 @@ a {
 }
 .hero .hero__content--right h2 .i-am {
   margin-left: 0.5rem;
+  margin-right: 1rem;
   font-size: 7rem;
   margin-bottom: 1.5rem;
   color: #00300f;
@@ -324,16 +352,59 @@ a {
 }
 .hero .hero__content--right h2 .i-leader {
   display: inline-block;
+  position: absolute;
 }
 .hero .hero__content--right h2 .i-leader .leader-span {
   font-size: 7rem;
   margin-bottom: 1.5rem;
   color: #c8834a;
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
 }
 @media only screen and (max-width: 56.25em) {
   .hero .hero__content--right h2 .i-leader .leader-span {
     font-size: 5rem;
   }
+}
+.hero .hero__content--right h2 .i-leader .leader-span--1 {
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.hero .hero__content--right h2 .i-leader .leader-span--2 {
+  animation: fadeIn;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.hero .hero__content--right h2 .i-leader .leader-span--3 {
+  animation: fadeIn;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.hero .hero__content--right h2 .i-leader .leader-span--4 {
+  animation: fadeIn;
+  animation-delay: 6s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.hero .hero__content--right h2 .i-leader .leader-span--5 {
+  animation: fadeInStay;
+  animation-delay: 8s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 .hero .hero__content--right h2 .leader-heading {
   display: block;
@@ -350,7 +421,7 @@ a {
   margin-left: 0.5rem;
 }
 .get-to-know-me {
-  background-color: #00300f;
+  background-color: #586600;
   padding: 5rem 8rem;
   display: flex;
   flex-direction: column;
@@ -376,6 +447,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #00300f;
   padding: 8rem;
 }
 .learn-more .container {
@@ -394,7 +466,7 @@ a {
   }
 }
 .learn-more .content p {
-  color: #00300f;
+  color: #f1ebe2;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -438,8 +510,8 @@ a {
   font-size: 15rem;
   line-height: 1;
   display: inline-block;
-  color: #586600;
-  opacity: 0.3;
+  color: #f1ebe2;
+  opacity: 0.2;
 }
 @media only screen and (max-width: 75em) {
   .learn-more .points__container .point span {
