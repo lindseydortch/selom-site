@@ -74,13 +74,14 @@
 
           .heading__row {
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             color: $brand-white;
           }
           
           h6 {
             font-size: 2rem;
             color: inherit;
+            margin-right: .5rem;
           }
 
           p {

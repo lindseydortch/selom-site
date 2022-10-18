@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   // height: 100vh;
+  overflow-x: hidden;
 
   .title-box {
     position: absolute;
@@ -135,7 +136,7 @@
         & .i-am {
           margin-left: .5rem;
           margin-right: 1rem;
-          font-size: 7rem;
+          font-size: 6rem;
           margin-bottom: 1.5rem;
           color: $brand-secondary;
 
@@ -150,7 +151,7 @@
           position: absolute;
 
           .leader-span {
-            font-size: 7rem;
+            font-size: 6rem;
             margin-bottom: 1.5rem;
             color: $brand-tertiary;
             opacity: 0;
