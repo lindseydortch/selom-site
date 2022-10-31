@@ -21,6 +21,26 @@
 
     // display: flex;
 
+    .skill-bg--1 {
+      background-image: linear-gradient(
+        rgba(0, 48, 15, 0.85),
+        rgba(0, 48, 15, 0.85)
+      ), url('https://images.unsplash.com/photo-1603975711481-18b7aaca4caa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .skill-bg--2 {
+      background-image: linear-gradient(
+        rgba(200, 131, 74, 0.85),
+        rgba(200, 131, 74, 0.85)
+      ), url('https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
     span svg {
       display: inline-block;
       position: absolute;
