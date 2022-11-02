@@ -33,6 +33,11 @@
       &:hover {
         transform: translateY(-1rem);
       }
+
+      @media only screen and (max-width: $bp-700) {
+        font-size: 1.2rem;
+        padding: 5rem 3rem;
+      }
     }
   }
 

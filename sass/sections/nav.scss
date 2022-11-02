@@ -18,10 +18,19 @@
       height: 20rem;
       object-fit: contain;
       object-position: center;
+
+      @media only screen and (max-width: $bp-700) {
+        width: 15rem;
+        height: 15rem;
+      }
     }
 
     @media only screen and (max-width: $bp-900) {
       font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      font-size: 1.4rem;
     }
   }
 

@@ -21,7 +21,7 @@
   h2 {
 
     @media only screen and (max-width: $bp-900) {
-      margin: 0;
+      margin: 3rem;
     }
   }
 
@@ -40,6 +40,10 @@
       @media only screen and (max-width: $bp-1200) {
         font-size: 2.8rem;
       }
+
+      @media only screen and (max-width: $bp-700) {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -49,13 +53,17 @@
 
     img {
       width: 100%;
-      height: 70rem;
       object-fit: contain;
       object-position: center;
+
+      @media only screen and (max-width: $bp-700) {
+        height: 48rem;
+      }
     }
   }
 
   .points__container {
+    width: 100%;
 
     .point {
       position: relative;
@@ -67,22 +75,30 @@
         color: $brand-tertiary;
         position: relative;
 
-        @media only screen and (max-width: $bp-1200) {
-          font-size: 4rem;
+        @media only screen and (max-width: $bp-1000) {
+          font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-700) {
+          font-size: 2.5rem;
         }
       }
 
       span {
         position: absolute;
-        font-size: 8rem;
+        font-size: 5rem;
         line-height: 1;
         display: inline-block;
 
         color: $brand-primary;
-        opacity: 0.2;
+        opacity: 0.3;
 
-        @media only screen and (max-width: $bp-1200) {
-          font-size: 10rem;
+        @media only screen and (max-width: $bp-1000) {
+          font-size: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-700) {
+          font-size: 3.5rem;
         }
       }
 

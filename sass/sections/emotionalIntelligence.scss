@@ -33,12 +33,21 @@
           text-align: center;
           text-transform: uppercase;
           color: $brand-secondary;
+
+          @media only screen and (max-width: $bp-700) {
+            font-size: 1.8rem;
+          }
         }
 
         svg {
           width: 20rem;
           height: 20rem;
           fill: $brand-tertiary;
+
+          @media only screen and (max-width: $bp-700) {
+            width: 15rem;
+            height: 15rem;
+          }
         }
       }
     }

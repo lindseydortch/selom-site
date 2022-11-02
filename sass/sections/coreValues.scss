@@ -9,6 +9,10 @@
     width: 100vw;
     overflow: hidden;
 
+    @media only screen and (max-width: $bp-700) {
+      font-size: 6rem;
+    }
+
     &--1,
     &--2 {
       margin-bottom: 2rem;

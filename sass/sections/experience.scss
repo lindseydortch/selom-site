@@ -24,6 +24,10 @@
       text-align: center;
       text-transform: uppercase;
       font-weight: 400;
+
+      @media only screen and (max-width: $bp-700) {
+        width: 100%;
+      }
     }
   }
 
